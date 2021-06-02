@@ -1,0 +1,5 @@
+IMPORTANTE VERIFICAR EL ORDEN DE EJECUCION
+sequelize model:generate --name Brand --attributes name:string
+sequelize model:generate --name Product --attributes name:string,description:text,price:decimal,image:string,keywords:text,userId:integer,brandId:integer
+sequelize model:generate --name Color --attributes name:string
+sequelize model:generate --name ColorProduct --attributes productId:integer,colorId:integer
